@@ -1,0 +1,302 @@
+.container {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 480px;
+    height: 640px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    //vertical-align: middle;
+}
+
+.header,
+.footer {
+    font-family: "Krona One", sans-serif;
+    font-size: x-large;
+    font-weight: 700;
+    color: #323232;
+    width: 480px;
+    height: 130px;
+    display: inline-flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    vertical-align: middle;
+    line-height: 1;
+}
+
+img {
+    height: auto;
+    width: auto;
+    max-width: 48px;
+    max-height: 48px;
+    opacity: 0.8;
+}
+
+.mainContainer {
+    background-color: rgba(255, 228, 212, 0.1);
+    border-radius: 15px;
+    width: 480px;
+    height: 380px;
+    font-family: "Krona One", sans-serif;
+    font-size: small;
+    font-weight: 700;
+    color: #323232;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  
+  .mainContainer img {
+    opacity: 0.7;
+    cursor: pointer;
+    margin: 16px;
+  }
+  
+  .mainContainer img:hover {
+    transition-property: transform;
+    transform: scale(1.2, 1.2);
+    transition-duration: 300ms;
+  }
+  
+  .errorBox {
+    width: 480px;
+    height: 20px;
+  }
+  
+
+  form {
+    vertical-align: middle;
+    line-height: 2;
+    width: 480px;
+    height: 220px;
+    margin: 8px;
+  }
+
+input {
+    width: 305px;
+    height: 28px;
+    border-radius: 5px;
+    border: 1px #323232 solid;
+    background-color: rgba(144, 176, 200, 0.3);
+    cursor: initial;
+}
+
+input:hover {
+    background-color: transparent;
+    border: 2px #144452 solid;
+}
+
+button {
+    width: 305px;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: "Krona One", sans-serif;
+    font-size: medium;
+    font-weight: 400;
+    color: #323232;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px rgba(210, 145, 188,0.7) solid;
+}
+
+button:hover {
+    background-color: rgba(144, 176, 200, 0.5);
+    border: 2px #144452 solid;
+    color: whitesmoke;
+}
+
+label{
+    font-size: medium;
+}
+
+.buttonWrapper {
+    margin: 16px;
+}
+
+.mail {
+    margin-top: -5px;
+}
+
+.pass {
+    background-color: transparent;
+}
+
+.pass2 {
+    margin-top: 5px;
+}
+
+.passArea {
+    margin: 5px;
+}
+
+.needAccount{
+    cursor: pointer;
+    margin: 8px;
+    height: 20px;
+}
+
+.needAccount:hover{
+    color: whitesmoke;
+}
+
+.showPassword{
+    margin-top: 15px;
+    padding-right: 8px;
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    gap: 0px;
+    
+}
+
+.showPassword >input{
+
+    padding: 0px;
+    width: 16px;
+    height: 16px;
+    align-self: center;
+}
+
+.showPassword >span{
+    align-self: center;
+    font-size: smaller;
+
+}
+
+@media (max-width:424px){
+
+    .container {
+
+        width: 260px;
+        height: 390px;
+ 
+    }
+
+    .header,
+.footer {
+    font-size: large;
+    font-weight: 700;
+    width: 240px;
+    height: 70px;
+
+}
+
+img {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.mainContainer{
+    width: 260px;
+    height: 260px;
+    padding-top: 8px;
+
+}
+
+.mainContainer img {
+    width: 32px;
+    height: 32px;
+    opacity: 0.7;
+    cursor: pointer;
+    margin: 0px;
+  }
+  
+  .mainContainer img:hover {
+    transition-property: transform;
+    transform: scale(1.2, 1.2);
+    transition-duration: 300ms;
+  }
+
+  .buttonContainer{
+      margin: 4px;
+      width: 32px;
+      height: 32px;
+  }
+
+  .errorBox{
+      width: 260px;
+  }
+  
+form {
+    width: 260px;
+    height: 160px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1;
+    margin: 0;
+}
+
+input {
+    width: 200px;
+    height: 20px;
+}
+
+button {
+    width: 205px;
+    padding: 1px;
+    font-size: medium;
+
+
+}
+
+label {
+    font-size: small;
+    line-height: 2;
+}
+
+.buttonWrapper {
+    margin:4px;
+}
+
+.mail {
+    margin-top: 0px;
+}
+
+.pass{
+
+    margin-top: 1px;
+}
+.pass2 {
+    margin-top: 2px;
+}
+
+.passArea {
+    margin: 0px;
+}
+
+.needAccount{
+    width: 260px;
+    height: 16px;
+    cursor: pointer;
+    margin: 4px;
+    font-size: 10px;
+}
+
+
+.showPassword >input{
+
+    width: 10px;
+    height: 10px;
+    align-self: center;
+    vertical-align: middle;
+}
+
+.showPassword >span{
+    align-self: center;
+    text-align: center;
+    font-size: xx-small;
+    vertical-align: middle;
+
+
+}
+
+}

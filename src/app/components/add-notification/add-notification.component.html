@@ -1,0 +1,119 @@
+<div class="container">
+  <div class="leftPanel">
+    <div class="header" [@fadeIn]="fadeIn">
+      <span>Zgłoś Usterkę</span>
+    </div>
+    <div class="logo">
+      <img
+        src="./assets/icons/business.png"
+        alt=""
+        [@fadeIn]="fadeIn"
+        [@flip]="flip"
+      />
+    </div>
+    <div class="footer" [@fadeIn]="fadeIn">
+      <span>
+        Miasto nasza <br />
+        wspólna sprawa.
+      </span>
+    </div>
+  </div>
+  <div class="rightPanel">
+    <form [hidden]="photoMode" [formGroup]="form" (ngSubmit)="onSubmit($event)">
+      <div class="personal" formGroupName="personal">
+        <div class="name">
+          <label for="name" class="name"></label>
+          <input type="text" formControlName="name" placeholder="Imię" />
+        </div>
+        <div class="surname">
+          <label for="surname" class="name"></label>
+          <input type="text" formControlName="surname" placeholder="Nazwisko" />
+        </div>
+      </div>
+      <div class="location">
+        <label for="location" class="location"></label>
+        <input
+          formControlName="location"
+          type="text"
+          placeholder="Lokalizacja"
+        />
+      </div>
+      <div class="photos">
+        <label for="photos"></label>
+        <input
+          formControlName="photos"
+          type="file"
+          (change)="handleFileInput($event.target.files)"
+          placeholder="Zdjęcia"
+        />
+        <span>lub</span>
+        <button (click)="makePhoto($event)">Zrób zdjecie</button>
+      </div>
+      <div *ngIf="this.captures.length !== 0 || fileToUpload">
+        <div
+          *ngIf="
+            this.captures.length !== 0;
+            then capturesBox;
+            else fileToUploadBox
+          "
+        ></div>
+        <ng-template #capturesBox>
+          <div>
+            <p>Wgrane zdjecia</p>
+          </div>
+        </ng-template>
+
+        <ng-template #fileToUploadBox>
+          <div>
+            <p>Wybrany plik</p>
+          </div>
+        </ng-template>
+      </div>
+      <div class="categories">
+        <label for="categories"></label>
+        <select class="categoriesContainer" formControlName="category">
+          <option selected disabled value="">Wybierz kategorie</option>
+          <option *ngFor="let category of categories" [value]="category">
+            {{ category }}
+          </option>
+        </select>
+      </div>
+      <div class="description">
+        <label for="description"></label>
+        <input
+          formControlName="description"
+          type="text"
+          placeholder="Uwagi. Minimum 15 znaków"
+        />
+      </div>
+      <div class="error" [hidden]="!errorMessage">
+        <span>{{ errorMessage }}</span>
+      </div>
+      <div class="submitButtonContainer">
+        <button type="submit">Wyślij</button>
+        <span>lub</span>
+        <button type="reset" (click)="goBack()">Wróć</button>
+      </div>
+    </form>
+    <div class="photoMode" *ngIf="photoMode">
+      <div class="videoContainer">
+        <video #video id="video" width="320" height="320" autoplay></video>
+      </div>
+      <div>
+        <canvas #canvas id="canvas" width="500" height="500"></canvas>
+        <div
+          class="miniPhotosContainer"
+          style="width: 380px; height: 56px; overflow: hidden;"
+        >
+          <div *ngFor="let c of captures">
+            <img src="{{ c }}" height="50" />
+          </div>
+        </div>
+      </div>
+      <div class="buttonContainer">
+        <div><button id="snap" (click)="capture()">Snap Photo</button></div>
+        <div><button id="close" (click)="close()">Close</button></div>
+      </div>
+    </div>
+  </div>
+</div>

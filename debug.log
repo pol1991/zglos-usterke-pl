@@ -1,0 +1,90 @@
+[1014/093147.598:ERROR:directory_reader_win.cc(43)] FindFirstFile: System nie mo¿e odnaleŸæ okreœlonej œcie¿ki. (0x3)
+[1014/104534.724:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\koper\AppData\Local\Microsoft\Edge\User Data\Crashpad\attachments\dde8e094-bb4e-403f-bbeb-67471ff6b126: System nie mo¿e odnaleŸæ okreœlonej œcie¿ki. (0x3)
+[1014/131058.429:ERROR:directory_reader_win.cc(43)] FindFirstFile: System nie mo¿e odnaleŸæ okreœlonej œcie¿ki. (0x3)
+[1019/093905.610:ERROR:directory_reader_win.cc(43)] FindFirstFile: System nie mo¿e odnaleŸæ okreœlonej œcie¿ki. (0x3)
+[1019/194851.201:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.201:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.201:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.203:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.202:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.203:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.203:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.203:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.203:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.203:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.203:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.203:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.279:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.279:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.279:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.280:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.280:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.280:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.280:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.280:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.280:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.280:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.280:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.331:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.331:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.331:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.331:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.331:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.331:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.331:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.331:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.331:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.363:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.364:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.364:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.364:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.364:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.364:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.364:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.364:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.364:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.364:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.364:ERROR:process_reader_win.cc(155)] SuspendThread: Odmowa dostêpu. (0x5)
+[1019/194851.201:ERROR:process_reader_win.cc(127)] NtOpenThread: {Odmowa dostêpu} Proces za¿¹da³ dostêpu do obiektu, ale prawa dostêpu nie zosta³y przyznane. (0xc0000022)
+[1019/194851.490:ERROR:exception_snapshot_win.cc(100)] thread ID 16108 not found in process
+[1019/194851.203:ERROR:process_reader_win.cc(127)] NtOpenThread: {Odmowa dostêpu} Proces za¿¹da³ dostêpu do obiektu, ale prawa dostêpu nie zosta³y przyznane. (0xc0000022)
+[1019/194851.364:ERROR:process_reader_win.cc(127)] NtOpenThread: {Odmowa dostêpu} Proces za¿¹da³ dostêpu do obiektu, ale prawa dostêpu nie zosta³y przyznane. (0xc0000022)
+[1019/194851.491:ERROR:exception_snapshot_win.cc(100)] thread ID 12864 not found in process
+[1019/194851.491:ERROR:exception_snapshot_win.cc(100)] thread ID 18812 not found in process
+[1019/194851.383:ERROR:process_reader_win.cc(127)] NtOpenThread: {Odmowa dostêpu} Proces za¿¹da³ dostêpu do obiektu, ale prawa dostêpu nie zosta³y przyznane. (0xc0000022)
+[1019/194851.491:ERROR:exception_snapshot_win.cc(100)] thread ID 13512 not found in process
+[1019/194851.201:ERROR:process_reader_win.cc(127)] NtOpenThread: {Odmowa dostêpu} Proces za¿¹da³ dostêpu do obiektu, ale prawa dostêpu nie zosta³y przyznane. (0xc0000022)
+[1019/194851.203:ERROR:process_reader_win.cc(127)] NtOpenThread: {Odmowa dostêpu} Proces za¿¹da³ dostêpu do obiektu, ale prawa dostêpu nie zosta³y przyznane. (0xc0000022)
+[1019/194851.491:ERROR:exception_snapshot_win.cc(100)] thread ID 7972 not found in process
+[1019/194851.491:ERROR:exception_snapshot_win.cc(100)] thread ID 12028 not found in process
+[1019/194851.201:ERROR:process_reader_win.cc(127)] NtOpenThread: {Odmowa dostêpu} Proces za¿¹da³ dostêpu do obiektu, ale prawa dostêpu nie zosta³y przyznane. (0xc0000022)
+[1019/194851.280:ERROR:process_reader_win.cc(127)] NtOpenThread: {Odmowa dostêpu} Proces za¿¹da³ dostêpu do obiektu, ale prawa dostêpu nie zosta³y przyznane. (0xc0000022)
+[1019/194851.491:ERROR:exception_snapshot_win.cc(100)] thread ID 17536 not found in process
+[1019/194851.203:ERROR:process_reader_win.cc(127)] NtOpenThread: {Odmowa dostêpu} Proces za¿¹da³ dostêpu do obiektu, ale prawa dostêpu nie zosta³y przyznane. (0xc0000022)
+[1019/194851.491:ERROR:exception_snapshot_win.cc(100)] thread ID 13672 not found in process
+[1019/194851.491:ERROR:exception_snapshot_win.cc(100)] thread ID 17452 not found in process
+[1019/194851.331:ERROR:process_reader_win.cc(127)] NtOpenThread: {Odmowa dostêpu} Proces za¿¹da³ dostêpu do obiektu, ale prawa dostêpu nie zosta³y przyznane. (0xc0000022)
+[1019/194851.491:ERROR:exception_snapshot_win.cc(100)] thread ID 19348 not found in process
+[1019/194851.958:ERROR:process_reader_win.cc(127)] NtOpenThread: {Odmowa dostêpu} Proces za¿¹da³ dostêpu do obiektu, ale prawa dostêpu nie zosta³y przyznane. (0xc0000022)
+[1019/194851.958:ERROR:exception_snapshot_win.cc(100)] thread ID 15004 not found in process
+[1019/194852.589:ERROR:process_reader_win.cc(127)] NtOpenThread: {Odmowa dostêpu} Proces za¿¹da³ dostêpu do obiektu, ale prawa dostêpu nie zosta³y przyznane. (0xc0000022)
+[1019/194852.589:ERROR:exception_snapshot_win.cc(100)] thread ID 6048 not found in process
+[1021/095424.985:ERROR:directory_reader_win.cc(43)] FindFirstFile: System nie mo¿e odnaleŸæ okreœlonej œcie¿ki. (0x3)
+[1023/122733.488:ERROR:directory_reader_win.cc(43)] FindFirstFile: Operacja ukoñczona pomyœlnie. (0x0)
+[1023/153303.180:ERROR:process_reader_win.cc(123)] NtOpenThread: {Odmowa dostêpu} Proces za¿¹da³ dostêpu do obiektu, ale prawa dostêpu nie zosta³y przyznane. (0xc0000022)
+[1023/153303.259:ERROR:exception_snapshot_win.cc(99)] thread ID 16608 not found in process
+[1025/132036.397:ERROR:directory_reader_win.cc(43)] FindFirstFile: Operacja ukoñczona pomyœlnie. (0x0)
+[1027/103059.609:ERROR:directory_reader_win.cc(43)] FindFirstFile: Operacja ukoñczona pomyœlnie. (0x0)
+[1027/151352.195:ERROR:process_reader_win.cc(123)] NtOpenThread: {Odmowa dostêpu} Proces za¿¹da³ dostêpu do obiektu, ale prawa dostêpu nie zosta³y przyznane. (0xc0000022)
+[1027/151352.289:ERROR:exception_snapshot_win.cc(99)] thread ID 18596 not found in process
+[1027/151352.195:ERROR:process_reader_win.cc(123)] NtOpenThread: {Odmowa dostêpu} Proces za¿¹da³ dostêpu do obiektu, ale prawa dostêpu nie zosta³y przyznane. (0xc0000022)
+[1027/151352.289:ERROR:exception_snapshot_win.cc(99)] thread ID 2840 not found in process
+[1027/151352.195:ERROR:process_reader_win.cc(123)] NtOpenThread: {Odmowa dostêpu} Proces za¿¹da³ dostêpu do obiektu, ale prawa dostêpu nie zosta³y przyznane. (0xc0000022)
+[1027/151352.195:ERROR:process_reader_win.cc(123)] NtOpenThread: {Odmowa dostêpu} Proces za¿¹da³ dostêpu do obiektu, ale prawa dostêpu nie zosta³y przyznane. (0xc0000022)
+[1027/151352.195:ERROR:process_reader_win.cc(123)] NtOpenThread: {Odmowa dostêpu} Proces za¿¹da³ dostêpu do obiektu, ale prawa dostêpu nie zosta³y przyznane. (0xc0000022)
+[1027/151352.195:ERROR:process_reader_win.cc(123)] NtOpenThread: {Odmowa dostêpu} Proces za¿¹da³ dostêpu do obiektu, ale prawa dostêpu nie zosta³y przyznane. (0xc0000022)
+[1027/151352.289:ERROR:exception_snapshot_win.cc(99)] thread ID 19264 not found in process
+[1027/151352.289:ERROR:exception_snapshot_win.cc(99)] thread ID 18996 not found in process
+[1027/151352.289:ERROR:exception_snapshot_win.cc(99)] thread ID 14012 not found in process
+[1027/151352.289:ERROR:exception_snapshot_win.cc(99)] thread ID 9144 not found in process
+[1201/221231.314:ERROR:directory_reader_win.cc(43)] FindFirstFile: System nie mo¿e odnaleŸæ okreœlonej œcie¿ki. (0x3)

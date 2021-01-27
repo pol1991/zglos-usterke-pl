@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="frontPanel">
+        <div class="baner">
+            <img src="./assets/icons/business2.png" alt="" />
+          </div>
+          <div class="logo">
+            <span>Zgłoś Usterkę</span>
+            <span>Panel Administracyjny</span>
+          </div>
+      </div>
+      <div class="login">
+          <div class="left">
+            <img src="./assets/wroclaw.png" alt="">
+          </div>
+          <div class="right" [@fadeIn]="fadeIn">
+        <form [formGroup]='form' (ngSubmit)='onSubmit($event)'>
+            <div class="mail">
+                <label for="email">Podaj email: <br /> </label>
+                <input id='email' formControlName='email' type="text" />
+            </div>
+            <div class="passArea" formGroupName='password'>
+                <div class="pass">
+                    <label id="label" for="password">Podaj hasło:<br />
+                    </label>
+                    <input id='password' #x formControlName='password' type="password"/>
+                </div>
+                <div class="showPassword">
+                    <input type="checkbox" (click)="x.type=x.type=='password'?'text':'password'"> <span>Pokaż Hasło</span>
+                </div>
+            </div>
+            <div class="buttonWrapper">
+                <button type="submit">Zaloguj</button>
+            </div>
+            <div class="errorBox" *ngIf='errorMessage'>
+                <p>{{errorMessage}}</p></div>
+            </form>
+        </div>
+    
+      </div>
+  </div>
+    

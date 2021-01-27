@@ -1,0 +1,1438 @@
+.container {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 960px;
+  height: 640px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.leftPanel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  height: 480px;
+  background-color: rgba(243, 210, 220, 0.3);
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+.videoContainer {
+  width: 380px;
+  height: 320px;
+  margin: 0;
+  padding: 0px;
+  border-radius: 16px;
+}
+
+.header,
+.footer {
+  margin: 16px;
+}
+
+.header span,
+.footer span {
+  font-weight: 700;
+  color: #323232;
+}
+
+.logo img {
+  opacity: 0.8;
+  width: 100px;
+  height: 100px;
+}
+
+.rightPanel {
+  width: 640px;
+  height: 480px;
+  background-color: rgba(236, 236, 204, 0.3);
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+  justify-content: center;
+}
+
+video {
+  width: 380px;
+  height: 320px;
+}
+
+.photoMode {
+  position: absolute;
+  top: 18%;
+  left: 47%;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+canvas {
+  display: none;
+}
+
+.miniPhotosContainer > div {
+  display: inline-block;
+  margin-bottom: 8px;
+  border-radius: 16px;
+}
+
+.buttonContainer {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 67px;
+  margin: 0;
+}
+
+form {
+  width: 500px;
+  height: 400px;
+  margin: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #323232;
+}
+
+input {
+  width: 400px;
+}
+
+input:active {
+  border: none;
+  background-color: transparent;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-family: "Krona One", sans-serif;
+  color: #323232;
+  font-size: 12px;
+}
+
+.name,
+.surname,
+.location,
+.photos,
+.description {
+  padding: 8px;
+}
+
+.description {
+  padding-left: 24px;
+}
+
+.photos,
+.submitButtonContainer {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 20px;
+  height: 32px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.photos input {
+  width: 128px;
+  height: 24px;
+  font-family: inherit;
+  text-align: center;
+  align-self: center;
+  border-bottom: none;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+input[type="file"] {
+  color: transparent;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  display: inline-block;
+  position: absolute;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: rgba(243, 210, 220, 0.5);
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  height: 24px;
+  width: 128px;
+}
+
+#close,
+#snap {
+  position: relative;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: rgba(243, 210, 220, 0.5);
+  border-radius: 2px;
+  border: none;
+  cursor: pointer;
+  height: 26px;
+  width: 156px;
+}
+
+.photos span,
+.submitButtonContainer span {
+  margin: 8px;
+  font-size: 10px;
+}
+
+.photos button {
+  font-family: inherit;
+  font-weight: 400;
+  background-color: rgba(243, 210, 220, 0.5);
+  height: 24px;
+  width: 128px;
+  border-radius: 2px;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+label {
+  visibility: hidden;
+}
+
+button {
+  align-self: center;
+}
+
+button[type="submit"],
+button[type="reset"] {
+  //margin: 4px;
+  font-family: inherit;
+  font-weight: 400;
+  background-color: rgba(243, 210, 220, 0.5);
+  height: 24px;
+  width: 128px;
+  border-radius: 2px;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.submitButtonContainer {
+  gap: 0px;
+  padding-left: 16px;
+}
+.error {
+  margin: 8px;
+}
+
+.error span {
+  font-size: 10px;
+}
+
+@media (max-width: 424px) {
+  .container {
+    height: 640px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    //justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .leftPanel {
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    height: 240px;
+    width: 320px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .videoContainer {
+    width: 240px;
+    height: 240px;
+    margin: 0;
+    padding: 0px;
+    border-radius: 16px;
+  }
+
+  video {
+    width: 240px;
+    height: 240px;
+  }
+
+  .photoMode {
+    position: absolute;
+    top: 36%;
+    left: 12.5%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+
+  canvas {
+    display: none;
+  }
+
+  .miniPhotosContainer {
+    width: 320px;
+    height: 64px;
+    overflow: scroll;
+  }
+
+  .miniPhotosContainer > div {
+    width: 320px;
+    height: 64px;
+    overflow: scroll;
+    display: inline-block;
+    margin-bottom: 8px;
+    border-radius: 16px;
+    overflow: scroll;
+  }
+
+  .buttonContainer {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    margin: 0;
+  }
+
+  .buttonContainer button {
+    font-family: inherit;
+    font-weight: 400;
+    background-color: rgba(243, 210, 220, 0.5);
+    height: 24px;
+    width: 108px !important;
+    border-radius: 2px;
+    border: none;
+    font-size: 8px;
+    cursor: pointer;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #snap,
+  #close {
+    font-size: 8px;
+  }
+
+  .header,
+  .footer {
+    margin: 8px;
+  }
+
+  .header span,
+  .footer span {
+    font-weight: 100;
+    color: #323232;
+  }
+
+  .logo img {
+    opacity: 0.8;
+    width: 60px;
+    height: 60px;
+  }
+
+  .rightPanel {
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    //height: 640px;
+    width: 320px;
+  }
+
+  form {
+    height: 400px;
+    width: 320px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  input {
+    width: 200px;
+  }
+
+  .photos,
+  .submitButtonContainer {
+    align-self: center;
+    width: 220px;
+    padding-left: 21px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .submitButtonContainer {
+    gap: 0px;
+    padding-left: 16px;
+  }
+
+  .photos input {
+    width: 88px;
+    height: 24px;
+    font-family: inherit;
+    text-align: center;
+    align-self: center;
+    border-bottom: none;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  input[type="file"] {
+    color: transparent;
+    font-size: 1px;
+  }
+
+  input[type="file"]::-webkit-file-upload-button {
+    display: inline-block;
+    position: absolute;
+    font-family: inherit;
+    font-size: 8px;
+    font-weight: 400;
+    background-color: rgba(243, 210, 220, 0.5);
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    height: 24px;
+    width: 88px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .photos span,
+  .submitButtonContainer span {
+    margin: 0px;
+    padding: 0px;
+    width: 20px;
+    font-size: 8px;
+    text-align: center;
+  }
+
+  .photos button,
+  button[type="submit"],
+  button[type="reset"] {
+    font-family: inherit;
+    font-weight: 400;
+    background-color: rgba(243, 210, 220, 0.5);
+    height: 24px;
+    width: 88px !important;
+    border-radius: 2px;
+    border: none;
+    font-size: 8px;
+    cursor: pointer;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 361px) {
+  .container {
+    height: 560px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    //justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .leftPanel {
+    height: 200px;
+    width: 320px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .header,
+  .footer {
+    margin: 8px;
+  }
+
+  .header span,
+  .footer span {
+    font-size: small;
+    font-weight: 100;
+    color: #323232;
+  }
+
+  .logo img {
+    opacity: 0.8;
+    width: 40px;
+    height: 40px;
+  }
+
+  .rightPanel {
+    //height: 640px;
+    width: 320px;
+  }
+
+  form {
+    height: 320px;
+    width: 320px;
+  }
+
+  input {
+    width: 200px;
+  }
+
+  .photos {
+    align-self: center;
+    width: 220px;
+    padding-left: 21px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .photos input {
+    width: 88px;
+    height: 24px;
+    font-family: inherit;
+    text-align: center;
+    align-self: center;
+    border-bottom: none;
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  input[type="file"] {
+    color: transparent;
+    font-size: 1px;
+  }
+
+  input[type="file"]::-webkit-file-upload-button {
+    display: inline-block;
+    position: absolute;
+    font-family: inherit;
+    font-size: 8px;
+    font-weight: 400;
+    background-color: rgba(243, 210, 220, 0.5);
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    height: 24px;
+    width: 88px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .photos span,
+  .submitButtonContainer span {
+    margin: 0px;
+    padding: 0px;
+    width: 20px;
+    font-size: 8px;
+    text-align: center;
+  }
+
+  .photos button,
+  button[type="submit"],
+  button[type="reset"] {
+    font-family: inherit;
+    font-weight: 400;
+    background-color: rgba(243, 210, 220, 0.5);
+    height: 24px;
+    width: 88px !important;
+    border-radius: 2px;
+    border: none;
+    font-size: 8px;
+    cursor: pointer;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    font-size: 8px;
+  }
+
+  .videoContainer {
+    width: 240px;
+    height: 240px;
+    margin: 0;
+    padding: 0px;
+    border-radius: 16px;
+  }
+
+  video {
+    width: 240px;
+    height: 240px;
+  }
+
+  .photoMode {
+    position: absolute;
+    top: 34%;
+    left: 12.5%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+
+  canvas {
+    display: none;
+  }
+
+  .miniPhotosContainer > div {
+    display: inline-block;
+    margin-bottom: 8px;
+    border-radius: 16px;
+  }
+
+  .buttonContainer {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 23px;
+    margin: 0;
+  }
+
+  .buttonContainer button {
+    font-family: inherit;
+    font-weight: 400;
+    background-color: rgba(243, 210, 220, 0.5);
+    width: 108px !important;
+    border-radius: 2px;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #snap,
+  #close {
+    font-size: 8px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 321px) and (max-height: 569px) {
+  .container {
+    height: 550px;
+    width: 300px;
+  }
+
+  .leftPanel {
+    height: 150px;
+    width: 300px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .header,
+  .footer {
+    margin: 0px;
+  }
+
+  .header span,
+  .footer span {
+    font-size: x-small;
+  }
+
+  .logo img {
+    opacity: 0.8;
+    width: 40px;
+    height: 40px;
+  }
+
+  .rightPanel {
+    width: 300px;
+  }
+
+  form {
+    height: 400px;
+    width: 300px;
+  }
+
+  .videoContainer {
+    width: 240px;
+    height: 240px;
+    margin: 0;
+    padding: 0px;
+    border-radius: 16px;
+  }
+
+  video {
+    width: 240px;
+    height: 240px;
+  }
+
+  .photoMode {
+    position: absolute;
+    top: 30%;
+    left: 9.5%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+
+  canvas {
+    display: none;
+  }
+
+  .miniPhotosContainer > div {
+    display: inline-block;
+    margin-bottom: 8px;
+    border-radius: 16px;
+  }
+
+  .buttonContainer {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+    margin: 0;
+  }
+
+  .buttonContainer button {
+    font-family: inherit;
+    font-weight: 400;
+    background-color: rgba(243, 210, 220, 0.5);
+    width: 108px !important;
+    border-radius: 2px;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #snap,
+  #close {
+    font-size: 8px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 280px) and (max-height: 654px) {
+  .container {
+    height: 600px;
+    width: 260px;
+  }
+
+  .leftPanel {
+    height: 200px;
+    width: 260px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .header,
+  .footer {
+    margin: 4px;
+  }
+
+  .header span,
+  .footer span {
+    font-size: small;
+  }
+
+  .logo img {
+    opacity: 0.8;
+    width: 60px;
+    height: 60px;
+  }
+
+  .rightPanel {
+    height: 400px;
+    width: 260px;
+  }
+
+  form {
+    height: 450px;
+    width: 260px;
+  }
+
+  .videoContainer {
+    width: 240px;
+    height: 240px;
+    margin: 0;
+    padding: 0px;
+    border-radius: 16px;
+  }
+
+  video {
+    width: 240px;
+    height: 240px;
+  }
+
+  .photoMode {
+    position: absolute;
+    top: 38%;
+    left: 3.83%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+
+  canvas {
+    display: none;
+  }
+
+  .miniPhotosContainer > div {
+    display: inline-block;
+    margin-bottom: 8px;
+    border-radius: 16px;
+  }
+
+  .buttonContainer {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 23px;
+    margin: 0;
+  }
+
+  .buttonContainer button {
+    font-family: inherit;
+    font-weight: 400;
+    background-color: rgba(243, 210, 220, 0.5);
+    width: 108px !important;
+    border-radius: 2px;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #snap,
+  #close {
+    font-size: 8px;
+    height: 24px;
+  }
+}
+
+@media (min-width: 539px) and (max-height: 721px) {
+  .container {
+    height: 700px;
+    width: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .leftPanel {
+    height: 250px;
+    width: 520px;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 0px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+  }
+
+  .header,
+  .footer {
+    margin: 8px;
+  }
+
+  .header span,
+  .footer span {
+    font-size: inherit;
+  }
+
+  .logo img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .rightPanel {
+    height: 450px;
+    width: 520px;
+    border-radius: 0px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+
+  form {
+    height: 450px;
+    width: 500px;
+  }
+
+  .videoContainer {
+    width: 360px;
+    height: 290px;
+    margin: 0;
+    padding: 0px;
+    border-radius: 16px;
+  }
+
+  video {
+    width: 360px;
+    height: 290px;
+  }
+
+  .photoMode {
+    position: absolute;
+    top: 40%;
+    left: 16%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+
+  canvas {
+    display: none;
+  }
+
+  .miniPhotosContainer > div {
+    display: inline-block;
+    margin-bottom: 8px;
+    border-radius: 16px;
+  }
+
+  .buttonContainer {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    margin: 0;
+    padding-left: 4px;
+  }
+
+  .buttonContainer button {
+    font-family: inherit;
+    font-weight: 400;
+    background-color: rgba(243, 210, 220, 0.5);
+    height: 24px;
+    width: 164px !important;
+    border-radius: 2px;
+    border: none;
+    font-size: 8px;
+    cursor: pointer;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #snap,
+  #close {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 833px) and (max-height: 415px) and (orientation: landscape) {
+  .container {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 400px;
+    width: 720px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .leftPanel {
+    justify-content: center;
+    width: 220px;
+    height: 400px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 16px;
+  }
+
+  .header,
+  .footer {
+    margin: 8px;
+  }
+
+  .header span,
+  .footer span {
+    font-size: small;
+    font-weight: 100;
+  }
+
+  .logo img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .rightPanel {
+    width: 500px;
+    height: 400px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 16px;
+  }
+
+  .videoContainer {
+    width: 240px;
+    height: 180px;
+    margin: 6px;
+    padding: 0px;
+    border-radius: 16px;
+  }
+
+  video {
+    width: 240px;
+    height: 180px;
+  }
+
+  .photoMode {
+    position: absolute;
+    top: 22%;
+    left: 48%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 240px;
+    height: 220px;
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+
+  canvas {
+    display: none;
+  }
+
+  .miniPhotosContainer > div {
+    display: inline-block;
+    margin-bottom: 8px;
+    border-radius: 16px;
+  }
+
+  .buttonContainer {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 23px;
+    margin: 0;
+    padding-left: 6px;
+  }
+
+  .buttonContainer button {
+    font-family: inherit;
+    font-weight: 400;
+    background-color: rgba(243, 210, 220, 0.5);
+    width: 108px !important;
+    border-radius: 2px;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #snap,
+  #close {
+    font-size: 10px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 833px) and (max-height: 376px) and (orientation: landscape) {
+  .container {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 360px;
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .leftPanel {
+    justify-content: center;
+    width: 250px;
+    height: 360px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 16px;
+  }
+
+  .header,
+  .footer {
+    margin: 8px;
+  }
+
+  .header span,
+  .footer span {
+    font-size: small;
+    font-weight: 100;
+  }
+
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .rightPanel {
+    width: 650px;
+    height: 360px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 16px;
+  }
+}
+
+@media (max-width: 668px) and (max-height: 376px) and (orientation: landscape) {
+  .container {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 350px;
+    width: 650px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .leftPanel {
+    justify-content: center;
+    width: 250px;
+    height: 350px;
+  }
+
+  .header,
+  .footer {
+    margin: 8px;
+  }
+
+  .header span,
+  .footer span {
+    font-size: small;
+    font-weight: 100;
+  }
+
+  .logo img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .rightPanel {
+    width: 400px;
+    height: 350px;
+  }
+
+  form {
+    height: 350px;
+    width: 380px;
+  }
+
+  input {
+    width: 300px;
+  }
+
+  .photos {
+    padding-left: 24px;
+  }
+
+  .videoContainer {
+    width: 240px;
+    height: 160px;
+    margin: 6px;
+    padding: 0px;
+    border-radius: 16px;
+  }
+
+  video {
+    width: 240px;
+    height: 160px;
+  }
+
+  .photoMode {
+    width: 240px;
+    position: absolute;
+    top: 18%;
+    left: 51%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+
+  canvas {
+    display: none;
+  }
+
+  .miniPhotosContainer > div {
+    display: inline-block;
+    margin-bottom: 8px;
+    border-radius: 16px;
+  }
+
+  .buttonContainer {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding-left: 17px;
+  }
+
+  .buttonContainer button {
+    font-family: inherit;
+    font-weight: 400;
+    background-color: rgba(243, 210, 220, 0.5);
+    //width: 96px ;
+    border-radius: 2px;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #snap,
+  #close {
+    font-size: 12px;
+    height: 24px;
+    width: 104px !important;
+  }
+}
+
+@media (max-width: 640px) and (max-height: 360px) and (orientation: landscape) {
+  .container {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 340px;
+    width: 620px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .leftPanel {
+    justify-content: center;
+    width: 180px;
+    height: 340px;
+  }
+
+  .header,
+  .footer {
+    margin: 8px;
+  }
+
+  .header span,
+  .footer span {
+    font-size: small;
+    font-weight: 100;
+  }
+
+  .logo img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .rightPanel {
+    width: 440px;
+    height: 340px;
+  }
+
+  .videoContainer {
+    width: 240px;
+    height: 180px;
+    margin: 6px;
+    padding: 0px;
+    border-radius: 16px;
+  }
+
+  video {
+    width: 240px;
+    height: 180px;
+  }
+
+  .photoMode {
+    position: absolute;
+    top: 16%;
+    left: 46%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 240px;
+    height: 220px;
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+
+  canvas {
+    display: none;
+  }
+
+  .miniPhotosContainer > div {
+    display: inline-block;
+    margin-bottom: 8px;
+    border-radius: 16px;
+  }
+
+  .buttonContainer {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 23px;
+    margin: 0;
+    padding-left: 6px;
+  }
+
+  .buttonContainer button {
+    font-family: inherit;
+    font-weight: 400;
+    background-color: rgba(243, 210, 220, 0.5);
+    width: 108px !important;
+    border-radius: 2px;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #snap,
+  #close {
+    font-size: 8px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 569px) and (max-height: 321px) and (orientation: landscape) {
+  .container {
+    height: 300px;
+    width: 550px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .leftPanel {
+    height: 300px;
+    width: 150px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .rightPanel {
+    width: 400px;
+    height: 300px;
+  }
+
+  form {
+    height: 300px;
+    width: 400px;
+  }
+
+  .photoMode {
+    position: absolute;
+    top: 12%;
+    left: 42%;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 240px;
+    height: 220px;
+  }
+
+  video {
+    width: 240px;
+    height: 160px;
+  }
+
+  .videoContainer {
+    width: 240px;
+    height: 160px;
+    margin: 6px;
+    padding: 0px;
+    border-radius: 16px;
+  }
+
+  [hidden] {
+    display: none !important;
+  }
+
+  canvas {
+    display: none;
+  }
+
+  .miniPhotosContainer > div {
+    display: inline-block;
+    margin-bottom: 8px;
+    border-radius: 16px;
+  }
+
+  .buttonContainer {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 23px;
+    margin: 0;
+    padding-left: 18px;
+  }
+
+  .buttonContainer button {
+    font-family: inherit;
+    font-weight: 400;
+    background-color: rgba(243, 210, 220, 0.5);
+    width: 96px !important;
+    border-radius: 2px;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #snap,
+  #close {
+    font-size: 10px;
+    height: 24px;
+  }
+}

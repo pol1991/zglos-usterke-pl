@@ -1,0 +1,31 @@
+<div class="background" >
+  <div class="container" [@fadeIn]="fadeIn"  [@flip]="flip">
+    <div class="header">
+      <img
+        src="./assets/icons/business2.png"
+        alt=""
+      />
+      <span [@fadeIn]="fadeIn">Zgłoś Usterkę</span>
+    </div>
+    <div class="loginWindow">
+      <div class="loginOption" id="google" (click)="GoogleAuth()">
+        <img src="./assets/icons/social/google64.png" alt="" />
+        <pre>Zaloguj przez Google</pre>
+      </div>
+      <div class="loginOption" id="facebook" (click)="FacebokAuth()">
+        <img src="./assets/icons/social/facebook62.png" alt="" />
+        <pre>Zaloguj przez Facebook</pre>
+      </div>
+      <div class="loginOption" id="mail" (click)="goToNewRegisterPage()">
+        <img src="./assets/icons/social/email100.png" alt="" />
+        <pre>Zaloguj przez email</pre>
+      </div>
+      <div class="buttonContainer" (click)="goBack()">
+        <img src="./assets/icons/nav/sign-out.svg" alt="" />
+      </div>
+    </div>
+    <div class="footer" >
+      <span>Napierw Rejestracja</span>
+    </div>
+  </div>
+</div>

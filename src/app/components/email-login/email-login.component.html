@@ -1,0 +1,63 @@
+<div class="container">
+  <div class="transition-container" [@fadeIn]="fadeIn" [@flip]="flip">
+    <div class="header">
+      <img src="./assets/icons/business2.png" alt="" />
+      <span>Zgłoś Usterkę</span>
+    </div>
+    <div class="mainContainer">
+      <form [formGroup]="form" (ngSubmit)="onSubmit($event)">
+        <div class="mail">
+          <label for="email">Podaj email: <br /> </label>
+          <input id="email" formControlName="email" type="text" />
+        </div>
+        <div class="passArea" formGroupName="password">
+          <div class="pass">
+            <label id="label" for="password">Podaj hasło:<br /> </label>
+            <input
+              id="password"
+              #x
+              formControlName="password"
+              type="password"
+            />
+          </div>
+          <div class="showPassword">
+            <input
+              type="checkbox"
+              (click)="x.type = x.type == 'password' ? 'text' : 'password'"
+            />
+            <span>Pokaż Hasło</span>
+          </div>
+        </div>
+        <div class="buttonWrapper">
+          <button type="submit">Zaloguj</button>
+        </div>
+      </form>
+      <div
+          [hidden]="errorMessage"
+          class="needAccount"
+          (click)="goToNewRegistrationPage()"
+        >
+          <span class="pleaseRegister"
+            >Nie masz konta? Zarejestruj się! <br />
+          </span>
+        </div>
+        <div *ngIf="errorMessage" class="needAccount" (click)="reserPassword()">
+          <!-- <span class="pleaseRegister"
+          >Nie pamietasz hasła? Zresetuj je! <br />
+        </span> -->
+          <div class="errorBox">
+            <p>{{ errorMessage }}</p>
+          </div>
+        </div>
+        <div class="buttonContainer" (click)="goBack()">
+          <img src="./assets/icons/nav/sign-out.svg" alt="" />
+        </div>
+    </div>
+    <div class="footer">
+      <span>
+        Miasto nasza <br />
+        wspólna sprawa.</span
+      >
+    </div>
+  </div>
+</div>

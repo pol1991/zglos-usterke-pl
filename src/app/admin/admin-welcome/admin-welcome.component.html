@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="frontPanel">
+        <div class="baner">
+            <img src="./assets/icons/business2.png" alt="" [@flip]="flip" />
+          </div>
+          <div class="logo" [@fadeIn]="fadeIn">
+            <span>Zgłoś Usterkę</span>
+            <span>Panel Administracyjny</span>
+          </div>
+      </div>
+      <div class="login">
+          <div class="left">
+            <img src="./assets/wroclaw.png" alt="" [@bounceIn]="bounceIn">
+
+          </div>
+          <div class="right" [@fadeIn]="fadeIn">
+          <span>Witaj Adminie</span>
+          <button (click)='goToLoginPanel()'>Zaloguj</button>
+        </div>
+      </div>
+  </div>

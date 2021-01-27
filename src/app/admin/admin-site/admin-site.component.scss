@@ -1,0 +1,236 @@
+.container {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 1640px;
+  height: 830px;
+}
+
+.beforeConfirm {
+  color: red;
+}
+
+.header {
+  height: 84px;
+  width: auto;
+  margin: 16px;
+  background-color: rgba(243, 220, 212, 0.5);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+}
+
+.baner {
+  height: auto;
+  width: 408px;
+  //margin-left: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  display: inline-flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.baner img {
+  width: 48px;
+  height: 48px;
+  vertical-align: middle;
+}
+
+.baner span {
+  vertical-align: middle;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.baner p {
+  font-size: 8px;
+  vertical-align: middle;
+  height: 5px;
+}
+
+.login {
+  height: auto;
+  width: 128px;
+  margin: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #323232;
+  border-radius: 16px;
+}
+
+.footer {
+  height: 84px;
+  width: auto;
+  margin: 16px;
+  background-color: rgba(228, 208, 228, 0.5);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: row;
+}
+
+.manual {
+  height: auto;
+  width: 408px;
+  margin: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.manual span {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.manualOpen {
+  height: 640px;
+  width: 408px;
+}
+
+
+.main {
+  width: 1640px;
+  height: 600px;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftPanel {
+  height: 600px;
+  width: 320px;
+  margin: 8px;
+  margin-left: 0px;
+  background-color: rgba(204, 232, 234, 0.5);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.leftPanel p {
+
+  margin: auto;
+  padding: 8px;
+}
+
+.locationContainer{
+
+  width: 240px;
+  height: 60px;
+  border-radius: 16px;
+  background-color: rgba(243, 220, 204, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photoContainer {
+  overflow: scroll;
+  width: 240px;
+  height: 240px;
+  border-radius: 16px;
+}
+
+.photoContainer div {
+  border-radius: 16px;
+}
+
+.photoContainer img {
+  width: 240px;
+  height: 240px;
+  border-radius: 16px;
+}
+
+.rightPanel {
+  height: 600px;
+  width: 1272px;
+  margin: 8px;
+  margin-right: 0px;
+  background-color: rgba(243, 220, 204, 0.5);
+  border-radius: 16px;
+  display: flex;
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+table {
+  text-align: center;
+  margin: 16px;
+  width: 1200px;
+}
+
+tr {
+  cursor: pointer;
+}
+
+tr:hover {
+  transition-property: transform;
+  transform: scale(1.01, 1.01);
+  transition-duration: 300ms;
+  border: 1px solid #323232;
+}
+
+th {
+  font-size: 10px;
+}
+
+td {
+  font-size: 8px;
+}
+
+.mapContainer {
+  display: inline-block;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+agm-map {
+  width: 240px;
+  height: 240px;
+}
+
+.actions {
+  width: 120px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  justify-content: center;
+  gap: 8px;
+}
+
+.confirm,
+.delete {
+  height: 24px;
+  width: 55px;
+  background-color: rgba(243, 210, 220, 0.7);
+  border: none;
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 8px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.confirm {
+  width: 65px;
+}

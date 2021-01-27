@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="transition"  [@fadeIn]="fadeIn"  [@flip]="flip">
+  <div class="gridBox">
+    <div class="header">
+      <img
+        src="./assets/icons/business2.png"
+        alt=""
+      />
+      <span>Zgłoś Usterkę</span>
+    </div>
+    <div class="navBox">
+      <div class="side" id="manual" (click)="goToManual()">
+        <img src="/assets/icons/education.png" alt="" />
+        <span> Instrukcja Obsługi</span>
+      </div>
+      <div (click)="goToNewNotificationPage()" class="side" id="send">
+        <img class="business" src="/assets/icons/business2.png" alt="" />
+        <span class="sbusiness">Zgłoś Usterkę</span>
+      </div>
+      <div (click)="goToInfo()" class="side" id="info">
+        <img src="/assets/icons/cogwheel.png" alt="" />
+        <span>Informacje prawne</span>
+      </div>
+    </div>
+    <div class="footer">
+      <span>
+        Miasto nasza <br />
+        wspólna sprawa.</span
+      >
+    </div>
+  </div>
+</div>
+</div>

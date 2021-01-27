@@ -1,0 +1,199 @@
+.container{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 960px;
+    height: 640px;
+    background-color:rgba(236, 236, 204,0.3);
+    color: #323232;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+  }
+  
+  .frontPanel{
+    margin: 16px;
+    border-radius: 16px;
+    width: 928px;
+    height: 180px;
+    background-color: rgba(243, 220, 212, 0.3);
+    display: inline-flex;
+    gap: 16px;
+  
+  }
+  
+  .baner {
+    margin-left: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .baner img {
+    width: 96px;
+    height: 96px;
+    vertical-align: middle;
+    opacity: 0.8;
+  }
+  
+  .logo span, .login span {
+    text-align: left;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  
+  .login{
+  
+    border-radius: 16px;
+    width: 928px;
+    height: 412px;
+    background-color: rgba(243, 210, 220,0.3);
+    display: inline-flex;
+    gap: 32px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .left{
+    width: 464px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .left img{
+    border: 16px solid  rgba(243, 220, 212, 0.9);
+    border-radius: 50%;
+    width: 340px;
+    height: 340px;
+    opacity: 0.7;
+  }
+  
+  .right{
+    width: 464px;
+    height: 360px;
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+
+
+form {
+    font-family: "Krona One", sans-serif;
+    font-size: small;
+    font-weight: 700;
+    color: #323232;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    vertical-align: middle;
+    line-height: 2;
+}
+
+input {
+    width: 320px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px #323232 solid;
+    background-color: rgba(144, 176, 200, 0.3);
+    cursor: initial;
+}
+
+input:hover {
+    background-color: transparent;
+    border: 2px #144452 solid;
+}
+
+button {
+    width: 320px;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: "Krona One", sans-serif;
+    font-size: medium;
+    font-weight: 400;
+    color: #323232;
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px rgba(210, 145, 188,0.7) solid;
+}
+
+button:hover {
+    background-color: rgba(144, 176, 200, 0.5);
+    border: 2px #144452 solid;
+    color: whitesmoke;
+}
+
+label{
+    font-size: 20px;
+}
+
+.buttonWrapper {
+    margin: 20px;
+}
+
+.mail {
+    margin-top: -5px;
+}
+
+.pass {
+    background-color: transparent;
+}
+
+.pass2 {
+    margin-top: 5px;
+}
+
+.passArea {
+    margin: 5px;
+}
+
+.needAccount{
+    cursor: pointer;
+    margin: 10px;
+}
+
+.needAccount:hover{
+    color: whitesmoke;
+}
+
+.showPassword{
+    margin-top: 15px;
+    padding-right: 8px;
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+    gap: 0px;
+    
+}
+
+.showPassword >input{
+
+    padding: 0px;
+    width: 16px;
+    height: 16px;
+    align-self: center;
+}
+
+.showPassword >span{
+    align-self: center;
+    font-size: smaller;
+
+}

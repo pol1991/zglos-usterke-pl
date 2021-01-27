@@ -1,0 +1,219 @@
+.background {
+    font-family: "Krona One", sans-serif;
+    font-weight: 700;
+    color: #323232;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.container {
+    display: block;
+}
+
+.loginWindow {
+    background-color: rgba(255, 228, 212, 0.1);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    height: 380px;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttonContainer{
+    margin: 4px;
+    width: 48px;
+    height: 48px;
+}
+
+.buttonContainer img{
+    //margin: 4px;
+    width: 48px;
+    height: 48px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.buttonContainer img:hover {
+    transition-property: transform;
+    transform: scale(1.2, 1.2);
+    transition-duration: 300ms;
+  }
+
+.loginOption {
+    padding: 12px;
+    margin: 6px 6px 6px 6px;
+    border-radius: 15px;
+    font-size: medium;
+    justify-content: center;
+    display: inline-flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+    cursor: pointer;
+}
+
+.loginOption:hover{
+    transition-property: transform;
+    transform: scale(1.1, 1.1);
+    transition-duration: 300ms;
+}
+
+.loginOption img {
+    align-self: flex-start;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#google {
+    padding-right: 42px;
+    gap: 13px;
+}
+
+#mail {
+    padding-right: 60px;
+    gap: 12px;
+}
+
+#mail pre {
+    text-align: left;
+}
+
+.loginOption pre {
+    vertical-align: middle;
+    text-align: left !important;
+    font-family: "Krona One", sans-serif;
+}
+
+img {
+    width: 52px;
+    height: 52px;
+    vertical-align: middle;
+}
+
+span {
+    vertical-align: middle;
+}
+
+.header,
+.footer {
+    width: 480px;
+    height: 120px;
+    margin: auto;
+    display: inline-flex;
+    text-align: center;
+    font-size: x-large;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.header img {
+    width: 48px;
+    height: 48px;
+    opacity: 0.7;
+    vertical-align: middle;
+}
+
+@media (max-width: 424px) {
+    .container {
+        width: 240px;
+        height: 320px;
+    }
+
+    .loginWindow {
+        width: 240px;
+        height: 170px;
+    }
+
+    .header,
+    .footer {
+        font-size: smaller;
+        width: 240px;
+        height: 75px;
+        padding: 15px;
+        margin: auto;
+        display: inline-flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        width: 60%;
+    }
+
+    .header img {
+        width: 24px;
+        height: 24px;
+        opacity: 0.7;
+        vertical-align: middle;
+    }
+
+    img {
+        width: 24px;
+        height: 24px;
+        vertical-align: middle;
+    }
+
+    .loginOption {
+        padding: 0px;
+        margin: 0px;
+        border-radius: 15px;
+        font-size: x-small;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 200px;
+        height: 40px;
+        padding-right: 0px;
+        gap: 0px;
+        vertical-align: middle;
+    }
+
+    .loginOption img {
+        align-self: center;
+    }
+
+    .buttonContainer{
+        margin: 4px;
+        width: 24px;
+        height: 24px;
+    }
+    
+    .buttonContainer img{
+        //margin: 4px;
+        width: 24px;
+        height: 24px;
+        opacity: 0.7;
+        cursor: pointer;
+    }
+    
+    .buttonContainer img:hover {
+        transition-property: transform;
+        transform: scale(1.2, 1.2);
+        transition-duration: 300ms;
+      }
+
+    #google {
+        padding-right: 16px;
+        gap: 4px;
+    }
+
+    #mail {
+        padding-right: 26px;
+        gap: 4px;
+    }
+
+    #mail pre {
+        text-align: left;
+    }
+
+    #facebook{
+        gap: 4px;
+    }
+}

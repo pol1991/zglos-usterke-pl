@@ -1,0 +1,162 @@
+.container {
+  font-family: "Krona One", sans-serif;
+  font-weight: 700;
+  color: #323232;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.transition{
+  display: block !important;
+  
+}
+
+.gridBox {
+  display: grid;
+  grid-template-areas: "header" "navBox navBox navBox";
+  grid-template-rows: auto auto;
+  grid-row-gap: auto;
+  grid-column-gap: auto;
+  justify-items: center;
+  align-items: center;
+}
+
+.navBox {
+  width: 480px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0;
+  background-color: rgba(255, 228, 212, 0.1);
+  border-radius: 15px;
+}
+
+.header,
+.footer {
+  display: inline-flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+  font-size: x-large;
+  line-height: 1;
+  width: 334px;
+  height: 120px;
+}
+
+.header span {
+  text-align: center;
+}
+
+.header img{
+height: auto;
+    width: auto;
+    max-width: 48px;
+    max-height: 48px;
+    opacity: 0.8;
+}
+
+.footer img {
+  width: 48px;
+  height: 48px;
+}
+
+#manual {
+  padding-right: 15.5px;
+}
+
+#send {
+  padding-right: 47px;
+}
+
+.side {
+  justify-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.side img {
+  width: 48px;
+  height: 48px;
+  vertical-align: middle;
+  opacity: 0.7;
+}
+
+.side span {
+  vertical-align: middle;
+  font-size: larger;
+}
+
+.image-container, .span-container{
+  display: block;
+}
+
+.side:hover{
+  transition-property: transform;
+  transform: scale(1.1, 1.1);
+  transition-duration: 300ms;
+}
+
+
+@media (max-width: 424px) {
+  .gridBox {
+    width: 240px;
+    height: 320px;
+  }
+
+  .navBox {
+    width: 240px;
+    height: 180px;
+  }
+
+  .header,
+  .footer {
+    font-size: 12px;
+    width: 167px;
+    height: 60px;
+    gap: 8px;
+  }
+
+  .header img{
+    width: 28px;
+    height: 28px;
+  }
+
+  .footer img {
+    width: 32px;
+    height: 32px;
+  }
+  .side{
+    gap:8px;
+    justify-content: space-evenly;
+  }
+
+  .side img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .side span {
+    font-size: 12px;
+  }
+
+  #manual{
+    padding-right: 0px;
+  }
+
+  #send{
+    padding-right: 32px;
+  }
+}

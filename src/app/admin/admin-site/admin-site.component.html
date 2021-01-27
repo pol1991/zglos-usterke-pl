@@ -1,0 +1,75 @@
+<div class="container">
+  <div class="header">
+    <div class="baner">
+      <div class="logo">
+        <img src="./assets/icons/business2.png" alt="" [@flip]="flip" />
+        <span [@fadeIn]="fadeIn"
+          >Zgłoś Usterkę <br />
+          Panel Administracyjny</span
+        >
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <div class="leftPanel">
+      <div class="photoContainer" *ngIf="photos">
+        <div *ngFor="let photo of photos">
+          <img id="nicePhoto" [src]="photo" alt="Nice photo" />
+        </div>
+      </div>
+      <div class="mapContainer">
+        <agm-map *ngIf="isMapVisible" [latitude]="lat" [longitude]="lon">
+          <agm-marker [latitude]="lat" [longitude]="lon"></agm-marker>
+        </agm-map>
+      </div>
+      <div class="locationContainer" *ngIf="isMapVisible">
+        <p>{{ currentLocation }}</p>
+      </div>
+    </div>
+    <div class="rightPanel">
+      <table style="width: 100%">
+        <tr>
+          <th>Imię:</th>
+          <th>Nazwisko:</th>
+          <th>email:</th>
+          <th>Lokalizacja:</th>
+          <th>Uwagi:</th>
+          <th>Akcje:</th>
+        </tr>
+        <tr
+          *ngFor="let notification of notifications"
+          [class.beforeConfirm]="!notification.isConfirmed"
+          (click)="getData(notification.photos, notification.location)"
+        >
+          <td>{{ notification.name }}</td>
+          <td>{{ notification.surname }}</td>
+          <td>{{ notification.email }}</td>
+          <td>{{ notification.location }}</td>
+          <td>{{ notification.description }}</td>
+          <td class="actions">
+            <button
+              class="confirm"
+              *ngIf="!notification.isConfirmed"
+              (click)="onConfirm(notification.id)"
+            >
+              Zatwierdź</button
+            ><button
+              class="delete"
+              (click)="onDelete(notification.id, notification.photos)"
+            >
+              Usuń
+            </button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="footer" [@fadeIn]="fadeIn">
+    <div class="manual">
+      <span (click)="setManual()">Instrukcja Obsługi</span>
+      <div *ngIf="showManual">
+        <manual></manual>
+      </div>
+    </div>
+  </div>
+</div>
