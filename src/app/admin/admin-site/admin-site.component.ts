@@ -1,11 +1,9 @@
-import { AddNotificationComponent } from './../../components/add-notification/add-notification.component';
 import { Observable } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { AngularFireStorage, createStorageRef } from '@angular/fire/storage';
-import { storage } from 'firebase';
-import { trigger, transition, useAnimation, style, state } from '@angular/animations';
-import { bounceIn, fadeIn, fadeOutUp, flip, rotateIn, pulse, fadeInLeft } from 'ng-animate';
+import { trigger, transition, useAnimation} from '@angular/animations';
+import { bounceIn, fadeIn, flip, rotateIn, fadeInLeft } from 'ng-animate';
 
 
 @Component({
