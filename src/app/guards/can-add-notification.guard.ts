@@ -20,15 +20,14 @@ export class CanAddNotificationGuard implements CanActivate {
       return this.auth.authState.pipe(switchMap(async user => {
         if (user && user.emailVerified) {
           return true;
-          console.log('Wciąż zalogowany');
         } else if (user) {
-          this.route.navigate(['verify']);
+          this.route.navigate(['zweryfikuj-email']);
           return false;
         } else {
           this.route.navigate(['logowanie']);
           return false;
         }
-      }))
+      }));
     } catch (error) {
       console.log(error);
       this.route.navigate(['logowanie']);

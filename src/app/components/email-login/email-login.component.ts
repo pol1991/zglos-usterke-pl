@@ -59,7 +59,6 @@ export class EmailLoginComponent implements OnInit {
         .catch((error) => this.errorMessage = 'Nie pamietasz hasła? Zresetuj je! ');
     } else {
       this.errorMessage = 'Nie pamietasz hasła? Zresetuj je!';
-      //this.route.navigate(['emaillogin']);
     }
   }
 
@@ -68,7 +67,7 @@ export class EmailLoginComponent implements OnInit {
   }
 
   goToNewRegistrationPage = () => {
-    this.route.navigate(['rejestracja']);
+    this.route.navigate(['rejestracja-email']);
   }
 
   goBack = () => {

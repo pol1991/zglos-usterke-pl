@@ -7,15 +7,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 640px;
-    height: 640px;
+    width: 720px;
+    height: 720px;
 }
 
 .fade-container{
-    
+   display: block;
+   height: inherit;
+   width: inherit;
 }
 
 iframe{
+    width: 640px;
+    height: 420px;
     border-radius: 16px;
 }
 
@@ -28,30 +32,46 @@ img{
 
 span{
     vertical-align: middle;
-    font-size: 24px;
+    font-size: 28px;
     line-height: 1;
     font-weight: 700;
     color: #323232;
 }
 
 .header, .footer{
+    width: auto;
+    height: 64px;
     display: inline-flex;
     gap:8px;
     align-items: center;
-    margin: 24px;
+    margin: 16px;
+}
+
+.footer2{
+    height: 48px;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonContainer{
+    width: 48px;
+    height: 48px;
+}
+
+.buttonContainer img{
+    width: 48px;
+    height: 48px;
+    opacity: 0.7;
+    cursor: pointer;
 }
 
 @media (max-width: 1025px) {
 
     .container{
        width: 1020px;
-       height: 1020px;
+       height: 1280px;
     }
 
-    .header, .footer{
-        gap: 24px;
-        margin: 36px;
-    }
 
     iframe{
        width: 980px;
@@ -67,13 +87,42 @@ span{
         font-size: 48px;
         
     }
+
+    .header, .footer{
+        width: auto;
+        height: 64px;
+        display: inline-flex;
+        gap:24px;
+        align-items: center;
+        margin: 36px;
+    }
+
+    .footer2{
+        height: 96px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .buttonContainer{
+        // margin: 4px;
+        width: 96px;
+        height: 96px;
+    }
+    
+    .buttonContainer img{
+        //margin: 4px;
+        width: 96px;
+        height: 96px;
+        opacity: 0.7;
+        cursor: pointer;
+    }
 }
 
 @media (max-width: 769px) {
 
     .container{
        width: 740px;
-       height: 740px;
+       height: 960px;
     }
 
     .header, .footer{
@@ -86,13 +135,42 @@ span{
     }
 
     img{
-        width: 48px;
-        height: 48px;
+        width: 56px;
+        height: 56px;
     }
 
     span{
-        font-size: 32px;
+        font-size: 34px;
         
+    }
+
+    .header, .footer{
+        width: auto;
+        height: 64px;
+        display: inline-flex;
+        gap:8px;
+        align-items: center;
+        margin: 16px;
+    }
+
+    .footer2{
+        height: 56px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .buttonContainer{
+        // margin: 4px;
+        width: 56px;
+        height: 56px;
+    }
+    
+    .buttonContainer img{
+        //margin: 4px;
+        width: 56px;
+        height: 56px;
+        opacity: 0.7;
+        cursor: pointer;
     }
 }
 
@@ -100,12 +178,12 @@ span{
 
     .container{
        width: 520px;
-       height: 520px;
+       height: 700px;
     }
 
     iframe{
-       width: 500px;
-       height: 500px;
+       width: 480px;
+       height: 480px;
     }
 
     img{
@@ -114,8 +192,37 @@ span{
     }
 
     span{
-        font-size: 24px;
+        font-size: 22px;
         
+    }
+
+    .header, .footer{
+        width: auto;
+        height: 56px;
+        display: inline-flex;
+        gap:8px;
+        align-items: center;
+        margin: 12px;
+    }
+
+    .footer2{
+        height: 48px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .buttonContainer{
+        // margin: 4px;
+        width: 48px;
+        height: 48px;
+    }
+    
+    .buttonContainer img{
+        //margin: 4px;
+        width: 48px;
+        height: 48px;
+        opacity: 0.7;
+        cursor: pointer;
     }
 }
 
@@ -123,45 +230,110 @@ span{
 
     .container{
        width: 360px;
-       height: 360px;
+       height: 600px;
     }
+
+    .fade-container{
+        display: block;
+        height: inherit;
+        width: inherit;
+     }
 
     iframe{
        width: 340px;
-       height: 340px;
+       height: 350px;
     }
 
     img{
-        width: 24px;
-        height: 24px;
+        width: 32px;
+        height: 32px;
     }
 
     span{
-        font-size: 18px;
+        font-size: 20px;
         
     }
+
+    .header, .footer{
+        width: auto;
+        height: 64px;
+        display: inline-flex;
+        gap:8px;
+        align-items: center;
+        margin: 16px;
+    }
+
+    .footer2{
+        height: 36px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .buttonContainer{
+        // margin: 4px;
+        width: 36px;
+        height: 36px;
+    }
+    
+    .buttonContainer img{
+        //margin: 4px;
+        width: 36px;
+        height: 36px;
+        opacity: 0.7;
+        cursor: pointer;
+    }
+    
 }
 
 @media (max-width: 321px) {
 
     .container{
        width: 320px;
-       height: 320px;
+       height: 560px;
     }
 
     iframe{
        width: 300px;
-       height: 300px;
+       height: 320px;
     }
 
     img{
-        width: 24px;
-        height: 24px;
+        width: 30px;
+        height: 30px;
     }
 
     span{
-        font-size: 16px;
+        font-size: 18px;
         
+    }
+
+    .header, .footer{
+        width: auto;
+        height: 64px;
+        display: inline-flex;
+        gap:8px;
+        align-items: center;
+        margin: 12px;
+    }
+
+    .footer2{
+        height: 36px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .buttonContainer{
+        // margin: 4px;
+        width: 32px;
+        height: 32px;
+    }
+    
+    .buttonContainer img{
+        //margin: 4px;
+        width: 32px;
+        height: 32px;
+        opacity: 0.7;
+        cursor: pointer;
     }
 }
 
@@ -169,7 +341,7 @@ span{
 
     .container{
        width: 280px;
-       height: 280px;
+       height: 500px;
     }
 
     iframe{
@@ -185,5 +357,34 @@ span{
     span{
         font-size: 16px;
         
+    }
+
+    .header, .footer{
+        width: auto;
+        height: 64px;
+        display: inline-flex;
+        gap:8px;
+        align-items: center;
+        margin: 12px;
+    }
+
+    .footer2{
+        height: 36px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .buttonContainer{
+        // margin: 4px;
+        width: 32px;
+        height: 32px;
+    }
+    
+    .buttonContainer img{
+        //margin: 4px;
+        width: 32px;
+        height: 32px;
+        opacity: 0.7;
+        cursor: pointer;
     }
 }

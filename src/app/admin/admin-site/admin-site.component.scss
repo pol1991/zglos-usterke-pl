@@ -148,14 +148,21 @@
 }
 
 .photoContainer div {
+  width: inherit;
+  height: inherit;
   border-radius: 16px;
 }
 
-.photoContainer img {
-  width: 240px;
-  height: 240px;
-  border-radius: 16px;
+.photoContainer img, #nicePhoto {
+  width: 100% !important;
+  height: 100% !important;
+  border-bottom-left-radius: 16px !important;
+  border-bottom-right-radius: 16px !important;
+  border-radius: 16px  !important;
 }
+
+
+
 
 .rightPanel {
   height: 600px;

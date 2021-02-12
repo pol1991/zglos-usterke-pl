@@ -11,9 +11,10 @@ export class AppComponent {
   title = 'Zglos Usterke';
 
   @HostListener('window:beforeunload', ['$event'])
+  // tslint:disable-next-line: typedef
   async beforeunUnload(event) {
     event.preventDefault();
     await this.auth.signOut();
-    window.close()
+    window.close();
   }
 }

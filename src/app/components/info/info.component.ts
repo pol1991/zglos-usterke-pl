@@ -1,8 +1,10 @@
 import { Component, OnInit, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { trigger, transition, useAnimation, style, state } from '@angular/animations';
-import { bounce, fadeIn, fadeOutUp, flip, rotateIn, pulse, fadeInLeft, jackInTheBox} from 'ng-animate';
+import { Router } from '@angular/router';
+import { trigger, transition, useAnimation } from '@angular/animations';
+import { fadeIn, flip, rotateIn, fadeInLeft, jackInTheBox } from 'ng-animate';
 
 @Component({
+  // tslint:disable-next-line: component-selector
   selector: 'infromacje',
   templateUrl: './info.component.html',
   styleUrls: ['./info.component.scss'],
@@ -29,9 +31,13 @@ export class InfoComponent implements OnInit {
   jackInTheBox: any;
 
 
-  constructor() { }
+  constructor(private route: Router) { }
 
   ngOnInit(): void {
+  }
+
+  goBack = () => {
+    this.route.navigate(['wybor']);
   }
 
 }

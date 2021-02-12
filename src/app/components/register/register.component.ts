@@ -3,9 +3,10 @@ import { AngularFireAuth } from '@angular/fire/auth';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { trigger, transition, useAnimation, style, state } from '@angular/animations';
-import { bounce, fadeIn, fadeOutUp, flip, rotateIn, pulse, fadeInLeft } from 'ng-animate';
+import { fadeIn, flip, rotateIn, fadeInLeft } from 'ng-animate';
 
 @Component({
+  // tslint:disable-next-line: component-selector
   selector: 'zarejestruj',
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.scss'],
@@ -55,13 +56,13 @@ export class RegisterComponent implements OnInit {
           user => user.sendEmailVerification()
         )
         .then(
-          () => { this.route.navigate(['redirect']); }
+          () => { this.route.navigate(['rejestracja-email-sukces']); }
         )
         .catch(error => console.log('Wystapił bład'));
     }
   }
 
   goBack = () => {
-    this.route.navigate(['emaillogin']);
+    this.route.navigate(['logowanie-email']);
   }
 }

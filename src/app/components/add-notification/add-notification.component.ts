@@ -5,8 +5,8 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { AngularFireStorage } from '@angular/fire/storage';
 import { Router } from '@angular/router';
-import { trigger, transition, useAnimation, style } from '@angular/animations';
-import { bounce, fadeIn, fadeOutUp, flip, rotateIn, pulse } from 'ng-animate';
+import { trigger, transition, useAnimation } from '@angular/animations';
+import { fadeIn, flip, rotateIn } from 'ng-animate';
 
 
 

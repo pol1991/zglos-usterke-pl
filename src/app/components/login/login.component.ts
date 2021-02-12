@@ -3,7 +3,7 @@ import { AngularFireAuth } from '@angular/fire/auth';
 import { Router } from '@angular/router';
 import { auth } from 'firebase/app';
 import { trigger, transition, useAnimation, style, state } from '@angular/animations';
-import { bounce, fadeIn, fadeOut, flip, rotateIn, pulse } from 'ng-animate';
+import { fadeIn, fadeOut, flip, rotateIn } from 'ng-animate';
 
 @Component({
   // tslint:disable-next-line: component-selector
@@ -42,7 +42,6 @@ export class LoginComponent implements OnInit {
   }
 
   GoogleAuth = () => {
-    console.log('działa?');
     return this.AuthLogin(new auth.GoogleAuthProvider());
   }
 
@@ -58,7 +57,7 @@ export class LoginComponent implements OnInit {
   goToNewRegisterPage = () => {
     this.fadeOut = 'end';
     setTimeout(() => {
-      this.route.navigate(['emaillogin']);
+      this.route.navigate(['logowanie-email']);
     }, 300);
   }
 

@@ -2,6 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
+  // tslint:disable-next-line: component-selector
   selector: 'przekierowanie',
   templateUrl: './success-register-redirect.component.html',
   styleUrls: ['./success-register-redirect.component.scss']
@@ -20,7 +21,7 @@ export class SuccessRegisterRedirectComponent implements OnInit, OnDestroy {
       if (this.timeToRedirect === 0) {
         this.router.navigate(['']);
       }
-    }, 1000);  // 5s
+    }, 1000);
   }
 
   ngOnDestroy(): void {

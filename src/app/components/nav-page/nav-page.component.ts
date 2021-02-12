@@ -1,5 +1,5 @@
-import { trigger, transition, useAnimation, style, state } from '@angular/animations';
-import { bounce, fadeIn, fadeOutUp, flip, rotateIn, pulse, fadeInLeft} from 'ng-animate';
+import { trigger, transition, useAnimation } from '@angular/animations';
+import { fadeIn, flip, rotateIn, fadeInLeft} from 'ng-animate';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -36,7 +36,7 @@ export class NavPageComponent implements OnInit {
   }
 
   goToManual = () => {
-    this.route.navigate(['manual']);
+    this.route.navigate(['instrukcja']);
   }
 
   goToInfo = () => {

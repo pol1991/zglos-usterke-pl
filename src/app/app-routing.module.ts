@@ -34,7 +34,7 @@ const routes: Routes = [
     component: NavPageComponent
   },
   {
-    path: 'manual',
+    path: 'instrukcja',
     component: ManualComponent
   },
   {
@@ -52,7 +52,7 @@ const routes: Routes = [
     canActivate: [CanReddirectIfItIsLoggedUserGuard]
   },
   {
-    path: 'rejestracja',
+    path: 'rejestracja-email',
     component: RegisterComponent,
     canActivate: [CanReddirectIfItIsLoggedUserGuard]
   },
@@ -72,16 +72,16 @@ const routes: Routes = [
     canActivate: [CanGoToAdminPanelGuard]
   },
   {
-    path: 'emaillogin',
+    path: 'logowanie-email',
     component: EmailLoginComponent,
     canActivate: [CanReddirectIfItIsLoggedUserGuard]
   },
   {
-    path: 'redirect',
+    path: 'rejestracja-email-sukces',
     component: SuccessRegisterRedirectComponent
   },
   {
-    path: 'verify',
+    path: 'zweryfikuj-email',
     component: PleaseVerifyEmailComponent
   },
   {
