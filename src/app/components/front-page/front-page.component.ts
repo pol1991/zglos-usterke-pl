@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { trigger, transition, useAnimation, style, state } from '@angular/animations';
-import { bounce, fadeIn, fadeOut, flip, fadeOutRight, zoomOut } from 'ng-animate';
-import { getTranslationDeclStmts } from '@angular/compiler/src/render3/view/template';
+import { fadeIn, fadeOut, flip } from 'ng-animate';
 
 
 @Component({
@@ -31,7 +30,6 @@ export class FrontPageComponent implements OnInit {
   fadeIn: any;
   flip: any;
   fadeOut = 'start';
-  //zoomOut = 'start';
 
   constructor(private router: Router) { }
 
@@ -41,7 +39,6 @@ export class FrontPageComponent implements OnInit {
 
   goToNavigationPanel = () => {
     this.fadeOut = 'end';
-    //this.zoomOut = 'end';
     setTimeout(() => {
       this.router.navigate(['wybor']);
     }, 300);

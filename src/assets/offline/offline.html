@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<reference types="@types/googlemaps" />
+<html lang="pl">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+  <meta charset="utf-8">
+  <title>Zgłoś Usterkę</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=2.0, user-scalable=0">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="offline.scss" rel="stylesheet/scss" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+
+<style>
+body{
+    margin: 0;
+}
+
+.background {
+    background-image: url("C:/Users/koper/OneDrive/Pulpit/Projekt/Projekt/src/assets/offline/daymode.png");
+    background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    font-family: "Krona One", sans-serif;
+    font-weight: 700;
+    color: #323232;
+    padding: 24px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 480px;
+    height: 640px;
+}
+
+.loginWindow {
+    background-color: rgba(255, 228, 212, 0.1);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+    height: 480px;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginOption {
+    width: 480px;
+    text-align:center;
+}
+
+.loginOption img {
+    align-self: flex-start;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.loginOption span{
+    text-align: center;
+}
+
+
+img {
+    width: 52px;
+    height: 52px;
+    vertical-align: middle;
+}
+
+span {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.header,
+.footer {
+    width: 334px;
+    height: 120px;
+    padding: 15px;
+    margin: auto;
+    display: inline-flex;
+    text-align: center;
+    font-size: x-large;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 60%;
+    line-height: 1;
+}
+
+.header img {
+    width: 48px;
+    height: 48px;
+    opacity: 0.7;
+    vertical-align: middle;
+}
+
+@media (max-width: 424px) {
+    .container {
+        width: 280px;
+        height: 560px;
+    }
+
+    .loginWindow {
+        width: 280px;
+        height: 280px;
+    }
+
+    .header,
+    .footer {
+        font-size: 14px;
+        width: 280px;
+        height: 140px;
+        padding: 15px;
+        margin: auto;
+        display: inline-flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        width: 60%;
+    }
+
+    .header img {
+        width: 24px;
+        height: 24px;
+        opacity: 0.7;
+        vertical-align: middle;
+    }
+
+    img {
+        width: 24px;
+        height: 24px;
+        vertical-align: middle;
+    }
+
+    .loginOption {
+        padding: 0px;
+        margin: 0px;
+        border-radius: 15px;
+        font-size: 12px;
+        display: inline-flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 200px;
+        height: 100px;
+        padding-right: 0px;
+        gap: 0px;
+        vertical-align: middle;
+    }
+
+    .loginOption img {
+        align-self: center;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+    <div class="background">
+        <div class="container">
+            <div class="header"> <img src="C:\Users\koper\OneDrive\Pulpit\Projekt\Projekt\src\assets\offline\business2.png" alt="">
+                <span>Zgłoś Usterkę</span></div>
+            <div class="loginWindow">
+                <div class="loginOption">
+                    <span>UPSS... Coś nie działa, chyba nie masz dostępu do internetu :( <br>
+                        Wróć do nas gdy znów połączysz się z internetem.
+                    </span>
+                </div>
+            </div>
+            <div class="footer">
+                <span> Miasto nasza <br /> wspólna sprawa.</span></div>
+        </div>
+</body>
+
+</html>

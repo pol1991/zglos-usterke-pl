@@ -2,8 +2,8 @@ import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { trigger, transition, useAnimation, style, state } from '@angular/animations';
-import { bounce, fadeIn, fadeOutUp, flip, rotateIn, pulse, fadeInLeft} from 'ng-animate';
+import { trigger, transition, useAnimation } from '@angular/animations';
+import { fadeIn, flip, rotateIn, fadeInLeft} from 'ng-animate';
 
 @Component({
   // tslint:disable-next-line: component-selector

@@ -4,6 +4,7 @@ import { trigger, transition, useAnimation} from '@angular/animations';
 import { fadeIn, flip, rotateIn, fadeInLeft, tada} from 'ng-animate';
 
 @Component({
+  // tslint:disable-next-line: component-selector
   selector: 'manual',
   templateUrl: './manual.component.html',
   styleUrls: ['./manual.component.scss'],
